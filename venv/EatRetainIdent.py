@@ -34,10 +34,8 @@ def write_attendance(source_directory, student_demographics, academic_year):
                                attendance['month'] * 100 +\
                                attendance['day']).values
     print("Writing attendance_demographics.csv to " + academic_year)
-    year_attendance = attendance.loc[attendance['timestamp'] >= academic_years[academic_year]['start_date']]
-    #TODO: Put this back after solving the 'duplicate' problem
-    #Otherwise change the condition (to <=) in order to get previous years data
-    #year_attendance = year_attendance.loc[attendance['timestamp'] <= academic_years[academic_year]['end_date']]
+    year_attendance = attendance.loc[((attendance['timestamp'] >= academic_years[academic_year]['start_date']) &
+                                      (attendance['timestamp'] <= academic_years[academic_year]['end_date']))]
     year_attendance.to_csv(os.path.join(academic_year, 'attendance_demographics.csv'))
     print(str(year_attendance.shape) + " written")
 
@@ -71,25 +69,23 @@ os.makedirs(academic_year, exist_ok=True)
 milestone_activities = eater.joiner(eater.milestone_event_joins, source_directory, 'milestones.csv')
 print("Total milestone_activities: " + str(milestone_activities.shape))
 print("Writing bi_milestone_activities.csv into " + academic_year + "...")
+start_epochms = academic_years[academic_year]["start_epochms"]
+end_epochms = academic_years[academic_year]["end_epochms"]
 year_milestone_activities = \
-    milestone_activities.loc[milestone_activities['end']>=academic_years[academic_year]["start_epochms"]].\
-        loc[milestone_activities['end']<=academic_years[academic_year]["end_epochms"]]
+    milestone_activities.loc[((milestone_activities['end'] >= start_epochms) &
+                              (milestone_activities['end'] <= end_epochms) &
+                              (milestone_activities['start'] >= start_epochms) &
+                              (milestone_activities['start'] <= end_epochms))]
 year_milestone_activities.to_csv(os.path.join(academic_year, 'bi_milestone_activities.csv'))
 print(str(year_milestone_activities.shape) + " written")
-'''
-academic_end = dt.datetime(2018, 5, 31)
-print("Writing bi_milestone_activities.csv up until " + str(academic_end.date()))
-milestone_activities.loc\
-    [milestone_activities['end']<=academic_end.timestamp()*1000].to_csv('bi_milestone_activities.csv')
-'''
 
-student_demographics = eater.joiner(eater.student_demographic_joins, source_directory, 'students.csv')
+student_demographics = eater.joiner(eater.student_demographic_joins, source_directory, 'students.csv').rename\
+    (columns={'cluster': 'cluster_id', 'block': 'mandal_id', 'district': 'division_id', 'zone': 'district_id'})
 print("Total student_demographics: " + str(student_demographics.shape))
 print("Writing bi_student_demographics.csv into " + academic_year + "...")
-year_student_demographics = student_demographics.rename\
-    (columns={'cluster': 'cluster_id', 'block': 'mandal_id', 'district': 'division_id', 'zone': 'district_id'}).\
+year_student_demographics = student_demographics.\
     loc[student_demographics['year']==academic_years[academic_year]["student_start_year"]]
 year_student_demographics.to_csv(os.path.join(academic_year, 'bi_student_demographics.csv'), index_label = 'student_id')
 print(str(year_student_demographics.shape) + " written")
 
-write_attendance(source_directory, student_demographics, academic_year)
+write_attendance(source_directory, year_student_demographics, academic_year)
