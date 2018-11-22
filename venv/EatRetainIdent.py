@@ -6,17 +6,18 @@ import os
 
 academic_years = {
     "2017-18": {
+        #start_date maps to the database months, which is numbered from 0
         "start_date": 20170501,
         "start_epochms": dt.datetime(2017, 6, 1).timestamp() * 1000,
-        "end_date": 20180331,
-        "end_epochms": dt.datetime(2018, 3, 31).timestamp() * 1000,
+        "end_date": 20180330,
+        "end_epochms": dt.datetime(2018, 4, 30).timestamp() * 1000,
         "student_start_year": 2017
     },
     "2018-19": {
-        "start_date": 20180501,
-        "start_epochms": dt.datetime(2018, 6, 1).timestamp() * 1000,
-        "end_date": 20190331,
-        "end_epochms": dt.datetime(2019, 3, 31).timestamp() * 1000,
+        "start_date": 20180920,
+        "start_epochms": dt.datetime(2018, 10, 20).timestamp() * 1000,
+        "end_date": 20190330,
+        "end_epochms": dt.datetime(2019, 4, 30).timestamp() * 1000,
         "student_start_year": 2018
     }
 }
@@ -30,14 +31,20 @@ def write_attendance(source_directory, student_demographics, academic_year):
                                                      'name of grade', 'management', 'zone_number']),
                                        on='student')
     print("Total attendance entries: " + str(attendance.shape))
-    attendance['timestamp'] = (attendance['year'] * 10000 +\
-                               attendance['month'] * 100 +\
+    attendance['timestamp'] = (attendance['year'] * 10000 +
+                               attendance['month'] * 100 +
                                attendance['day']).values
-    print("Writing attendance_demographics.csv to " + academic_year)
+    print("Writing bi_attendance_demographics.csv to " + academic_year)
     year_attendance = attendance.loc[((attendance['timestamp'] >= academic_years[academic_year]['start_date']) &
                                       (attendance['timestamp'] <= academic_years[academic_year]['end_date']))]
-    year_attendance.to_csv(os.path.join(academic_year, 'attendance_demographics.csv'))
+    year_attendance.to_csv(os.path.join(academic_year, 'bi_attendance_demographics.csv'))
     print(str(year_attendance.shape) + " written")
+
+def write_devices(source_directory, academic_year):
+    devices = eater.joiner(eater.devices_joins, source_directory, 'devices.csv')
+    print("Writing devices to " + academic_year)
+    devices.to_csv(os.path.join(academic_year, 'bi_devices.csv'))
+    print(str(devices.shape) + " written")
 
 def reversit(m, s):
     rev = m[s]
@@ -82,10 +89,20 @@ print(str(year_milestone_activities.shape) + " written")
 student_demographics = eater.joiner(eater.student_demographic_joins, source_directory, 'students.csv').rename\
     (columns={'cluster': 'cluster_id', 'block': 'mandal_id', 'district': 'division_id', 'zone': 'district_id'})
 print("Total student_demographics: " + str(student_demographics.shape))
-print("Writing bi_student_demographics.csv into " + academic_year + "...")
 year_student_demographics = student_demographics.\
     loc[student_demographics['year']==academic_years[academic_year]["student_start_year"]]
+
+student_duplicate_markers = year_student_demographics.index.duplicated(keep='last')
+duplicate_students = year_student_demographics[student_duplicate_markers]
+if(len(duplicate_students) > 0):
+    print("\nWarning! Duplicate student IDs found in the academic year. \nNumber of duplicates: " +
+          str(len(duplicate_students)))
+
+year_student_demographics = year_student_demographics[~student_duplicate_markers]
+print("Writing bi_student_demographics.csv into " + academic_year + "...")
 year_student_demographics.to_csv(os.path.join(academic_year, 'bi_student_demographics.csv'), index_label = 'student_id')
 print(str(year_student_demographics.shape) + " written")
 
 write_attendance(source_directory, year_student_demographics, academic_year)
+
+write_devices(source_directory, academic_year)

@@ -89,6 +89,37 @@ milestone_event_joins = {'milestones.csv': {'index_col': 'id',
                                        'join_with': None, 'join_on': None}
                          }
 
+devices_joins = { 'devices.csv': {'index_col': 'serial',
+                                  'usecols': None,
+                                  'col_rename': None,
+                                  'join_with': 'schools.csv', 'join_on': 'school'},
+                  'schools.csv': {'index_col': 'id',
+                                  'usecols': ['id', 'management', 'name', 'cluster'],
+                                  'resolve_duplicates': 'name',
+                                  'col_rename': {'name': 'name of school'},
+                                  'join_with': 'clusters.csv', 'join_on': 'cluster'},
+                  'clusters.csv': {'index_col': 'id',
+                                   'usecols': ['id', 'name', 'block'],
+                                   'resolve_duplicates': 'name',
+                                   'col_rename': {'name': 'name of cluster'},
+                                   'join_with': 'blocks.csv', 'join_on': 'block'},
+                  'blocks.csv': {'index_col': 'id',
+                                 'usecols': ['id', 'name', 'district'],
+                                 'resolve_duplicates': 'name',
+                                 'col_rename': {'name': 'name of mandal'},
+                                 'join_with': 'districts.csv', 'join_on': 'district'},
+                  'districts.csv': {'index_col': 'id',
+                                    'usecols': ['id', 'name', 'zone'],
+                                    'resolve_duplicates': 'name',
+                                    'col_rename': {'name': 'name of division'},
+                                    'join_with': 'zones.csv', 'join_on': 'zone'},
+                  'zones.csv': {'index_col': 'id',
+                                'usecols': ['id', 'name', 'state'],
+                                'resolve_duplicates': 'name',
+                                'col_rename': {'name': 'name of district', 'state': 'zone_number'},
+                                'join_with': None, 'join_on': None}
+
+                  }
 
 def read_table_from_file(joins, directory, filename):
     next_table = pd.read_csv(directory + '/' + filename, sep='#', index_col=joins[filename]['index_col'],
