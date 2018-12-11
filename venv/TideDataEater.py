@@ -46,7 +46,7 @@ student_demographic_joins = {'students.csv': {'index_col': 'id',
                                            'join_with': None, 'join_on': None}
                              }
 
-milestone_event_joins = {'milestones.csv': {'index_col': 'id',
+milestone_event_joins = {'milestones.csv': {'index_col': None,
                                             'usecols': ['id', 'end', 'milestoneId', 'start', 'status', 'ladder_id'],
                                             'col_rename': None,
                                             'join_with': 'ladders.csv', 'join_on': 'ladder_id'},

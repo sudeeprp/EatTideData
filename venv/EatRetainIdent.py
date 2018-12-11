@@ -67,7 +67,13 @@ def printusage_and_quit(argv):
 def parse_path(argv):
     if len(argv) != 3:
         printusage_and_quit(argv)
-    return argv[1], argv[2]
+
+    source_directory = argv[1]
+    academic_year = argv[2]
+
+    if academic_year not in academic_years:
+        printusage_and_quit(argv)
+    return source_directory, academic_year
 
 
 source_directory, academic_year = parse_path(sys.argv)
