@@ -19,6 +19,13 @@ academic_years = {
         "end_date": 20190330,
         "end_epochms": dt.datetime(2019, 4, 30).timestamp() * 1000,
         "student_start_year": 2018
+    },
+    "2019-20": {
+        "start_date": 20190701,
+        "start_epochms": dt.datetime(2019, 7, 1).timestamp() * 1000,
+        "end_date": 20200330,
+        "end_epochms": dt.datetime(2020, 4, 30).timestamp() * 1000,
+        "student_start_year": 2019
     }
 }
 
@@ -26,6 +33,8 @@ def write_attendance(source_directory, student_demographics, academic_year):
     print("Reading attendance table")
     attendance_table = pd.read_csv(source_directory + '/attendances.csv', sep='#',
                                    usecols=['day', 'month', 'period', 'year', 'presence', 'student', 'classId'])
+    attendance_table.student = attendance_table.student.astype(int)
+    student_demographics.student_id = student_demographics.student_id.astype(int)
     attendance = attendance_table.join(student_demographics.drop\
                                            (columns=['gender',	'classes_id', 'year', 'grade_id', 'sessionEnd',
                                                      'name of grade', 'management', 'zone_number']),
@@ -109,6 +118,8 @@ print("Writing bi_student_demographics.csv into " + academic_year + "...")
 year_student_demographics.to_csv(os.path.join(academic_year, 'bi_student_demographics.csv'), index_label = 'student_id')
 print(str(year_student_demographics.shape) + " written")
 
-write_attendance(source_directory, year_student_demographics, academic_year)
+print("Not writing attendance data")
+#write_attendance(source_directory, year_student_demographics, academic_year)
 
+print("Writing devices")
 write_devices(source_directory, academic_year)
