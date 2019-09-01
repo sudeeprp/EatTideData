@@ -69,7 +69,7 @@ def hashcsv_writer(tabular_data, filename):
 
 def printusage_and_quit(argv):
     print("Usage: " + argv[0] + " <csv source folder> <academic year>")
-    print("\t<academic year> can be 2017-18 or 2018-19\n")
+    print("\t<academic year> can be 2017-18 or 2018-19 or 2019-20\n")
     sys.exit()
 
 

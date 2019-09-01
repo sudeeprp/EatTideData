@@ -1,0 +1,129 @@
+﻿Grade name,Course name,MS Seq,concat2,MS description,MS-short-desc,MS-short-desc-seq,Baseline CMD,Subject milestone
+1,English,1,1English1,"The alphabet, sounds",Alphabet-sounds,01-Alphabet-sounds,26,English: 01-Alphabet-sounds
+1,English,2,1English2,Words related to Family,Family-words,02-Family-words,16,English: 02-Family-words
+1,English,3,1English3,Words related to School,School-words,03-School-words,16,English: 03-School-words
+1,English,4,1English4,Words related to Habits,Habits-words,04-Habits-words,16,English: 04-Habits-words
+1,English,5,1English5,Words related to Animals,Animals-words,05-Animals-words,16,English: 05-Animals-words
+1,English,6,1English6,Words related to Vehicles,Vehicles-words,06-Vehicles-words,16,English: 06-Vehicles-words
+1,English,7,1English7,Words related to Nice People,People-words,07-People-words,11,English: 07-People-words
+1,English,8,1English8,Words related to fruits and vegetables,Fruits-veg-words,08-Fruits-veg-words,16,English: 08-Fruits-veg-words
+1,English,9,1English9,Words related to nature,Nature-words,09-Nature-words,15,English: 09-Nature-words
+1,English,10,1English10,Words related to flowers and colours,Flowers-colors-words,10-Flowers-colors-words,14,English: 10-Flowers-colors-words
+1,English,11,1English11,Words related to the village fair,Village-fair-words,11-Village-fair-words,15,English: 11-Village-fair-words
+1,English,12,1English12,Words related to our body,Our-body-words,12-Our-body-words,14,English: 12-Our-body-words
+1,English,13,1English13,"Time, calendar",Time-calendar,13-Time-calendar,15,English: 13-Time-calendar
+1,EVS,1,1EVS1,Family,Family,01-Family,15,EVS: 01-Family
+1,EVS,2,1EVS2,Body,Body,02-Body,15,EVS: 02-Body
+1,EVS,3,1EVS3,"Flowers, trees",Flowers-trees,03-Flowers-trees,15,EVS: 03-Flowers-trees
+1,EVS,4,1EVS4,"Fruits, vegetables",Fruits-vegetables,04-Fruits-vegetables,15,EVS: 04-Fruits-vegetables
+1,EVS,5,1EVS5,Wind,Wind,05-Wind,8,EVS: 05-Wind
+1,EVS,6,1EVS6,Animals,Animals,06-Animals,15,EVS: 06-Animals
+1,EVS,7,1EVS7,"Food, water",Food-water,07-Food-water,15,EVS: 07-Food-water
+1,EVS,8,1EVS8,"House, cleanliness",House-cleanliness,08-House-cleanliness,15,EVS: 08-House-cleanliness
+1,EVS,9,1EVS9,Hygiene,Hygiene,09-Hygiene,8,EVS: 09-Hygiene
+1,EVS,10,1EVS10,Vehicles,Vehicles,10-Vehicles,15,EVS: 10-Vehicles
+1,EVS,11,1EVS11,Things at home,Things-at-home,11-Things-at-home,8,EVS: 11-Things-at-home
+1,EVS,12,1EVS12,Games,Games,12-Games,8,EVS: 12-Games
+1,EVS,13,1EVS13,Neighbours,Neighbours,13-Neighbours,8,EVS: 13-Neighbours
+1,Mathematics,1,1Mathematics1,Getting used to the tab,Tab-intro,01-Tab-intro,16,Mathematics: 01-Tab-intro
+1,Mathematics,2,1Mathematics2,Position and shapes,Positions-shapes,02-Positions-shapes,12,Mathematics: 02-Positions-shapes
+1,Mathematics,3,1Mathematics3,"Identify, count numbers 1 to 5",Count-1-to-5,03-Count-1-to-5,12,Mathematics: 03-Count-1-to-5
+1,Mathematics,4,1Mathematics4,"Addition, answer not more than 5",Add-upto-5,04-Add-upto-5,10,Mathematics: 04-Add-upto-5
+1,Mathematics,5,1Mathematics5,"Subtraction, numbers 1 to 5",Subtract-upto-5,05-Subtract-upto-5,10,Mathematics: 05-Subtract-upto-5
+1,Mathematics,6,1Mathematics6,Numbers 6 to 9,Numbers-6-to-9,06-Numbers-6-to-9,10,Mathematics: 06-Numbers-6-to-9
+1,Mathematics,7,1Mathematics7,"Less-more, high-lower, numbers 1 to 9",Comparison-1-to-9,07-Comparison-1-to-9,13,Mathematics: 07-Comparison-1-to-9
+1,Mathematics,8,1Mathematics8,"Addition 1 to 9, horizontal and vertical",Add-1-to-9,08-Add-1-to-9,8,Mathematics: 08-Add-1-to-9
+1,Mathematics,9,1Mathematics9,Subtraction 1 to 9,Subtract-1-to-9,09-Subtract-1-to-9,8,Mathematics: 09-Subtract-1-to-9
+1,Mathematics,10,1Mathematics10,Learn zero,Zero,10-Zero,10,Mathematics: 10-Zero
+1,Mathematics,11,1Mathematics11,"Count items, numbers up to 20",Count-upto-20,11-Count-upto-20,8,Mathematics: 11-Count-upto-20
+1,Mathematics,12,1Mathematics12,"Addition, below 20",Add-below-20,12-Add-below-20,13,Mathematics: 12-Add-below-20
+1,Mathematics,13,1Mathematics13,Subtraction below 20,Subtract-below-20,13-Subtract-below-20,9,Mathematics: 13-Subtract-below-20
+1,Mathematics,14,1Mathematics14,"100, tens numbers",Tens-upto-100,14-Tens-upto-100,13,Mathematics: 14-Tens-upto-100
+1,Mathematics,15,1Mathematics15,"Tens, numbers up to 99",Numbers-upto-99,15-Numbers-upto-99,7,Mathematics: 15-Numbers-upto-99
+1,Mathematics,16,1Mathematics16,"Money, time, measures, weight",Money-time-measures-weight,16-Money-time-measures-weight,14,Mathematics: 16-Money-time-measures-weight
+1,Telugu,1,1Telugu1,Practise,Practise,01-Practise,16,Telugu: 01-Practise
+1,Telugu,2,1Telugu2,Letters for palaka,palaka-letters,02-palaka-letters,10,Telugu: 02-palaka-letters
+1,Telugu,3,1Telugu3,"Letters for vada, vala, kadava, padava",vada-vala-kadava-padava-letters,03-vada-vala-kadava-padava-letters,8,Telugu: 03-vada-vala-kadava-padava-letters
+1,Telugu,4,1Telugu4,"Letters for tabala, udatha, balapam",tabala-udatha-balapam-letters,04-tabala-udatha-balapam-letters,9,Telugu: 04-tabala-udatha-balapam-letters
+1,Telugu,5,1Telugu5,"Letters for jada, panasa",jada-panasa-letters,05-jada-panasa-letters,9,Telugu: 05-jada-panasa-letters
+1,Telugu,6,1Telugu6,"Letters for araka, sanaga, ala, naga",araka-sanaga-ala-naga-letters,06-araka-sanaga-ala-naga-letters,10,Telugu: 06-araka-sanaga-ala-naga-letters
+1,Telugu,7,1Telugu7,Letters for eeka and eega,eeka-eega-letters,07-eeka-eega-letters,9,Telugu: 07-eeka-eega-letters
+1,Telugu,8,1Telugu8,Letters for aata and mancham,aata-mancham-letters,08-aata-mancham-letters,8,Telugu: 08-aata-mancham-letters
+1,Telugu,9,1Telugu9,Letters for ooyala,ooyala-letters,09-ooyala-letters,9,Telugu: 09-ooyala-letters
+1,Telugu,10,1Telugu10,"aa words kaakara, vaana",aa-words-kaakara-vaana,10-aa-words-kaakara-vaana,12,Telugu: 10-aa-words-kaakara-vaana
+1,Telugu,11,1Telugu11,"aa and ee words, kaaki, teega",aa-ee-words-kaaki-teega,11-aa-ee-words-kaaki-teega,11,Telugu: 11-aa-ee-words-kaaki-teega
+1,Telugu,12,1Telugu12,"u and oo words, aavu, chinukulu, elugubanti",u-oo-words-aavu-chinukulu-elugubanti,12-u-oo-words-aavu-chinukulu-elugubanti,10,Telugu: 12-u-oo-words-aavu-chinukulu-elugubanti
+1,Telugu,13,1Telugu13,"i words, ituka, inumu, isuka",i-words-ituka-inumu-isuka,13-i-words-ituka-inumu-isuka,8,Telugu: 13-i-words-ituka-inumu-isuka
+1,Telugu,14,1Telugu14,"e, ea and ai words, eluka, eanugu, aidu",e-ea-ai-words-eluka-eanugu-aidu,14-e-ea-ai-words-eluka-eanugu-aidu,9,Telugu: 14-e-ea-ai-words-eluka-eanugu-aidu
+1,Telugu,15,1Telugu15,"e, ea and ai words, saikilu, railu, telugu",e-ea-ai-words-saikilu-railu-telugu,15-e-ea-ai-words-saikilu-railu-telugu,11,Telugu: 15-e-ea-ai-words-saikilu-railu-telugu
+1,Telugu,16,1Telugu16,"o, oa and au words, okati, onte, oaDa",o-oa-au-words-okati-onte-oaDa,16-o-oa-au-words-okati-onte-oaDa,8,Telugu: 16-o-oa-au-words-okati-onte-oaDa
+1,Telugu,17,1Telugu17,"o, oa and au words, nauka, poudaru",o-oa-au-words-nauka-poudaru,17-o-oa-au-words-nauka-poudaru,10,Telugu: 17-o-oa-au-words-nauka-poudaru
+1,Telugu,18,1Telugu18,"La, ha, sha, Na",La-ha-sha-Na,18-La-ha-sha-Na,8,Telugu: 18-La-ha-sha-Na
+1,Telugu,19,1Telugu19,"kha, gha, cha, Tha, Dha",kha-gha-cha-Tha-Dha,19-kha-gha-cha-Tha-Dha,10,Telugu: 19-kha-gha-cha-Tha-Dha
+1,Telugu,20,1Telugu20,"tha, jha, dha, pha and bha",tha-jha-dha-pha-bha,20-tha-jha-dha-pha-bha,8,Telugu: 20-tha-jha-dha-pha-bha
+1,Telugu,21,1Telugu21,Revision,Revision,21-Revision,3,Telugu: 21-Revision
+2,English,1,2English1,"The alphabet, sounds",Alphabet-sounds,01-Alphabet-sounds,26,English: 01-Alphabet-sounds
+2,English,2,2English2,Words related to Family,Family-words,02-Family-words,16,English: 02-Family-words
+2,English,3,2English3,Words related to School,School-words,03-School-words,16,English: 03-School-words
+2,English,4,2English4,Words related to Habits,Habits-words,04-Habits-words,16,English: 04-Habits-words
+2,English,5,2English5,Words related to Animals,Animals-words,05-Animals-words,16,English: 05-Animals-words
+2,English,6,2English6,Words related to Vehicles,Vehicles-words,06-Vehicles-words,16,English: 06-Vehicles-words
+2,English,7,2English7,Words related to Nice People,People-words,07-People-words,11,English: 07-People-words
+2,English,8,2English8,Words related to fruits and vegetables,Fruits-veg-words,08-Fruits-veg-words,16,English: 08-Fruits-veg-words
+2,English,9,2English9,Words related to nature,Nature-words,09-Nature-words,15,English: 09-Nature-words
+2,English,10,2English10,Words related to flowers and colours,Flowers-colors-words,10-Flowers-colors-words,14,English: 10-Flowers-colors-words
+2,English,11,2English11,Words related to the village fair,Village-fair-words,11-Village-fair-words,15,English: 11-Village-fair-words
+2,English,12,2English12,Words related to our body,Our-body-words,12-Our-body-words,14,English: 12-Our-body-words
+2,English,13,2English13,"Time, calendar",Time-calendar,13-Time-calendar,15,English: 13-Time-calendar
+2,EVS,1,2EVS1,Family,Family,01-Family,15,EVS: 01-Family
+2,EVS,2,2EVS2,Body,Body,02-Body,15,EVS: 02-Body
+2,EVS,3,2EVS3,"Flowers, trees",Flowers-trees,03-Flowers-trees,15,EVS: 03-Flowers-trees
+2,EVS,4,2EVS4,"Fruits, vegetables",Fruits-vegetables,04-Fruits-vegetables,15,EVS: 04-Fruits-vegetables
+2,EVS,5,2EVS5,Wind,Wind,05-Wind,8,EVS: 05-Wind
+2,EVS,6,2EVS6,Animals,Animals,06-Animals,15,EVS: 06-Animals
+2,EVS,7,2EVS7,"Food, water",Food-water,07-Food-water,15,EVS: 07-Food-water
+2,EVS,8,2EVS8,"House, cleanliness",House-cleanliness,08-House-cleanliness,15,EVS: 08-House-cleanliness
+2,EVS,9,2EVS9,Hygiene,Hygiene,09-Hygiene,8,EVS: 09-Hygiene
+2,EVS,10,2EVS10,Vehicles,Vehicles,10-Vehicles,15,EVS: 10-Vehicles
+2,EVS,11,2EVS11,Things at home,Things-at-home,11-Things-at-home,8,EVS: 11-Things-at-home
+2,EVS,12,2EVS12,Games,Games,12-Games,8,EVS: 12-Games
+2,EVS,13,2EVS13,Neighbours,Neighbours,13-Neighbours,8,EVS: 13-Neighbours
+2,Maths Diagnostic,1,2Maths Diagnostic 1,Grade 1 baseline,Grade1-baseline,01-Grade1-baseline,5,Maths Diagnostic: 01-Grade1-baseline
+2,Mathematics,Practise,2MathematicsPractise,Practise,Practise,Practise-Practise,5,Mathematics: Practise-Practise
+2,Mathematics,1,2Mathematics1,Revision: Numbers from 1 to 20,Revision-1-to-20,01-Revision-1-to-20,10,Mathematics: 01-Revision-1-to-20
+2,Mathematics,2,2Mathematics2,"Hundred, and three digit numbers",Three-digit-numbers,02-Three-digit-numbers,14,Mathematics: 02-Three-digit-numbers
+2,Mathematics,3,2Mathematics3,"Bigger-smaller numbers, ascending-descending order",Ascending-descending,03-Ascending-descending,14,Mathematics: 03-Ascending-descending
+2,Mathematics,4,2Mathematics4,Addition of 2 digit numbers without carry over,Add-2-digit-without-carry-over,04-Add-2-digit-without-carry-over,9,Mathematics: 04-Add-2-digit-without-carry-over
+2,Mathematics,5,2Mathematics5,Addition of 2 digit numbers with carry over,Add-2-digit-with-carry-over,05-Add-2-digit-with-carry-over,14,Mathematics: 05-Add-2-digit-with-carry-over
+2,Mathematics,6,2Mathematics6,Subtraction of 2 digit numbers without carry over,Subtract-2-digit-without-borrow,06-Subtract-2-digit-without-borrow,11,Mathematics: 06-Subtract-2-digit-without-borrow
+2,Mathematics,7,2Mathematics7,Subtraction of 2 digit numbers with carry over,Subtract-2-digit-with-borrow,07-Subtract-2-digit-with-borrow,12,Mathematics: 07-Subtract-2-digit-with-borrow
+2,Mathematics,8,2Mathematics8,Introduction to multiplication,Multiplication-intro,08-Multiplication-intro,15,Mathematics: 08-Multiplication-intro
+2,Mathematics,9,2Mathematics9,Introduction to division,Division-intro,09-Division-intro,9,Mathematics: 09-Division-intro
+2,Mathematics,10,2Mathematics10,Non standard measures,Non-standard-measures,10-Non-standard-measures,18,Mathematics: 10-Non-standard-measures
+2,Mathematics,11,2Mathematics11,Time,Time,11-Time,14,Mathematics: 11-Time
+2,Mathematics,12,2Mathematics12,Money,Money,12-Money,8,Mathematics: 12-Money
+2,Mathematics,13,2Mathematics13,Shapes,Shapes,13-Shapes,7,Mathematics: 13-Shapes
+2,Mathematics,14,2Mathematics14,Counting and tabulating,Counting-tabulating,14-Counting-tabulating,10,Mathematics: 14-Counting-tabulating
+2,Telugu Diagnostic,1,2Telugu Diagnostic1,Grade 1 baseline,Grade-1-baseline,01-Grade-1-baseline,5,Telugu Diagnostic: 01-Grade-1-baseline
+2,Telugu,1,2Telugu1,Revise class 1,Revise-class-1,01-Revise-class-1,6,Telugu: 01-Revise-class-1
+2,Telugu,2,2Telugu2,"Revise ?, ?, ? and ?,?",Revise-letters,02-Revise-letters,8,Telugu: 02-Revise-letters
+2,Telugu,3,2Telugu3,"Reinforce u, uu, ye and yee",Reinforce-u-uu-ye-yee,03-Reinforce-u-uu-ye-yee,9,Telugu: 03-Reinforce-u-uu-ye-yee
+2,Telugu,4,2Telugu4,"Reinforce a, e, i, ye and ow",Reinforce-a-e-i-ye-ow,04-Reinforce-a-e-i-ye-ow,7,Telugu: 04-Reinforce-a-e-i-ye-ow
+2,Telugu,5,2Telugu5,"Read and write with ?, ?, ?, ? and ?",Read-write-letters,05-Read-write-letters,7,Telugu: 05-Read-write-letters
+2,Telugu,6,2Telugu6,Read and write with stresses of ? and ?,Read-write-stresses1,06-Read-write-stresses1,8,Telugu: 06-Read-write-stresses1
+2,Telugu,7,2Telugu7,"Read, write with stresses of ?  and ?, words and sentences",Read-write-stresses2-words-sentences,07-Read-write-stresses2-words-sentences,10,Telugu: 07-Read-write-stresses2-words-sentences
+2,Telugu,8,2Telugu8,"Read, write with stresses of ? and ?, words and sentences",Read-write-stresses3-words-sentences,08-Read-write-stresses3-words-sentences,9,Telugu: 08-Read-write-stresses3-words-sentences
+2,Telugu,9,2Telugu9,"Read, write stresses of ?, ? and ?, words and sentences",Read-write-stresses4-words-sentences,09-Read-write-stresses4-words-sentences,11,Telugu: 09-Read-write-stresses4-words-sentences
+2,Telugu,10,2Telugu10,"Read, write with stresses of ? and ?, words and sentences",Read-write-stresses5-words-sentences,10-Read-write-stresses5-words-sentences,12,Telugu: 10-Read-write-stresses5-words-sentences
+2,Telugu,11,2Telugu11,"Read, write with stresses of ? and ?, words and sentences",Read-write-stresses6-words-sentences,11-Read-write-stresses6-words-sentences,10,Telugu: 11-Read-write-stresses6-words-sentences
+2,Telugu,12,2Telugu12,"Read, write with stresses of ? and ?, words and sentences",Read-write-stresses7-words-sentences,12-Read-write-stresses7-words-sentences,11,Telugu: 12-Read-write-stresses7-words-sentences
+2,Telugu,13,2Telugu13,"Read, write with stresses of ?, ? and ?, words and sentences",Read-write-stresses8-words-sentences,13-Read-write-stresses8-words-sentences,11,Telugu: 13-Read-write-stresses8-words-sentences
+2,Telugu,14,2Telugu14,Revise all stressed letters learnt so far,Revise-stresses,14-Revise-stresses,9,Telugu: 14-Revise-stresses
+2,Telugu,15,2Telugu15,Learn samyukta and samslesha words,samyukta-samslesha,15-samyukta-samslesha,10,Telugu: 15-samyukta-samslesha
+2,Telugu,16,2Telugu16,"Communication, bonding skills, critical thinking and humour through riddles",Commn-bonding-crit-thinking-riddles,16-Commn-bonding-crit-thinking-riddles,8,Telugu: 16-Commn-bonding-crit-thinking-riddles
+2,Telugu,17,2Telugu17,Comprehension and recall using stories,Comprehension-recall-stories,17-Comprehension-recall-stories,9,Telugu: 17-Comprehension-recall-stories
+2,Telugu,18,2Telugu18,Sequencing of events in Telugu,Sequencing-events-Telugu,18-Sequencing-events-Telugu,8,Telugu: 18-Sequencing-events-Telugu
+2,Telugu,19,2Telugu19,Sentence structure and comprehension,Sentence-structure-comprehension,19-Sentence-structure-comprehension,8,Telugu: 19-Sentence-structure-comprehension
+2,Telugu,20,2Telugu20,Classification and sorting,Classification-sorting,20-Classification-sorting,10,Telugu: 20-Classification-sorting
+2,Maths Diagnostic,2,2Maths Diagnostic2,,Grade2-baseline2,02-Grade2-baseline2,5,Maths Diagnostic: 02-Grade2-baseline2
+2,Maths Diagnostic,3,2Maths Diagnostic3,,Grade2-baseline3,03-Grade2-baseline3,5,Maths Diagnostic: 03-Grade2-baseline3

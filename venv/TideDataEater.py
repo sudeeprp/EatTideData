@@ -121,6 +121,7 @@ devices_joins = { 'devices.csv': {'index_col': 'serial',
 
                   }
 
+
 def read_table_from_file(joins, directory, filename):
     next_table = pd.read_csv(directory + '/' + filename, sep='#', index_col=joins[filename]['index_col'],
                              usecols=joins[filename]['usecols'])
@@ -141,10 +142,12 @@ def next_join(joins, filename):
     return joins[filename]['join_with'], joins[filename]['join_on']
 
 
-def joiner(joins, directory, start_file):
+def joiner(joins, directory, start_file, write_intermediates=False):
     accumulator = read_table_from_file(joins, directory, start_file)
     next_file, next_join_on = next_join(joins, start_file)
     while next_file is not None:
+        if write_intermediates:
+            accumulator.to_csv('before-' + next_file)
         print('Joining ' + next_file)
         next_table = read_table_from_file(joins, directory, next_file)
         accumulator = accumulator.join(next_table, on=next_join_on)
