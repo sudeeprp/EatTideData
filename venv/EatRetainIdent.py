@@ -85,6 +85,12 @@ def parse_path(argv):
     return source_directory, academic_year
 
 
+def repair_indents(filename):
+    with open(filename, 'r') as input_file:
+        file_content = input_file.read()
+    with open(filename, 'w') as output_file:
+        output_file.write(file_content.replace('\n ', ' '))
+
 source_directory, academic_year = parse_path(sys.argv)
 os.makedirs(academic_year, exist_ok=True)
 
@@ -101,6 +107,9 @@ year_milestone_activities = \
 year_milestone_activities.to_csv(os.path.join(academic_year, 'bi_milestone_activities.csv'))
 print(str(year_milestone_activities.shape) + " written")
 
+student_start_file = 'students.csv'
+print('Repairing indents in ' + student_start_file)
+repair_indents(os.path.join(source_directory, student_start_file))
 student_demographics = eater.joiner(eater.student_demographic_joins, source_directory, 'students.csv').rename\
     (columns={'cluster': 'cluster_id', 'block': 'mandal_id', 'district': 'division_id', 'zone': 'district_id'})
 print("Total student_demographics: " + str(student_demographics.shape))
