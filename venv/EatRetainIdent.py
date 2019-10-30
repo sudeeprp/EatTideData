@@ -33,8 +33,6 @@ def write_attendance(source_directory, student_demographics, academic_year):
     print("Reading attendance table")
     attendance_table = pd.read_csv(source_directory + '/attendances.csv', sep='#',
                                    usecols=['day', 'month', 'period', 'year', 'presence', 'student', 'classId'])
-    attendance_table.student = attendance_table.student.astype(int)
-    student_demographics.student_id = student_demographics.student_id.astype(int)
     attendance = attendance_table.join(student_demographics.drop\
                                            (columns=['gender',	'classes_id', 'year', 'grade_id', 'sessionEnd',
                                                      'name of grade', 'management', 'zone_number']),
@@ -127,8 +125,8 @@ print("Writing bi_student_demographics.csv into " + academic_year + "...")
 year_student_demographics.to_csv(os.path.join(academic_year, 'bi_student_demographics.csv'), index_label = 'student_id')
 print(str(year_student_demographics.shape) + " written")
 
-print("Not writing attendance data")
-#write_attendance(source_directory, year_student_demographics, academic_year)
+print("Writing attendance data")
+write_attendance(source_directory, year_student_demographics, academic_year)
 
 print("Writing devices")
 write_devices(source_directory, academic_year)
